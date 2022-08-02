@@ -20,6 +20,19 @@
     </form>
 
 
+    <h2>Current Dishes/Food that has been rated</h2>
+
+    <ul class="Food">
+        <% for(let i=0; i < info.length; i++) {%>
+            <li class="Food">
+                <span><%= info[i].dishName %></span><br>
+                <span><%= info[i].rating %></span>
+                <span class='fa fa-trash'></span>
+            </li>
+        <% } %>
+        </ul>
+
+
 
     <script src='js/main.js'></script>
 

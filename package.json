@@ -1,0 +1,19 @@
+{
+  "name": "food-rating-app",
+  "version": "1.0.0",
+  "description": "Hello! This is a Food Rating App where it helps me decide what I want to eat today. To start this app will show a leaderboard of food that I like. Future ideas include to make different leaderboards for different meal types and to search for parameters.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mongodb": "^4.8.1"
+  }
+}

@@ -30,6 +30,16 @@ app.get('/',(request, response)=>{
 })
 
 
+app.post('/addFood', (request, response) => {
+    db.collection('food').insertOne({dishName: request.body.dishName,
+    rating: request.body.rating})
+    .then(result => {
+        console.log('Food/Dish added')
+        response.redirect('/')
+    })
+    .catch(error => console.error(error))
+})
+
 
 
 

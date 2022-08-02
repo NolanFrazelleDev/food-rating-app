@@ -40,6 +40,15 @@ app.post('/addFood', (request, response) => {
     .catch(error => console.error(error))
 })
 
+app.delete('/deleteFood', (request, response) => {
+    db.collection('food').deleteOne({dishName: request.body.dishNameS})
+    .then(result => {
+        console.log('Food/Dish Deleted')
+        response.json('Food/Dish Deleted')
+    })
+    .catch(error => console.error(error))
+
+})
 
 
 

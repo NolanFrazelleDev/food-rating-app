@@ -22,7 +22,7 @@ app.use(express.json())
 
 
 app.get('/',(request, response)=>{
-    db.collection('food').find().sort({likes: -1}).toArray()
+    db.collection('food').find().sort({rating: -1}).toArray()
     .then(data => {
         response.render('index.ejs', { info: data })
     })

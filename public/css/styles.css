@@ -1,3 +1,12 @@
-* {
-    background-color: black;
+body {
+    background-image: url("/");
+}
+
+.photos {
+    height: 400px;
+    width: 400px
+}
+
+.center {
+    border-left: 200px;
 }
